@@ -17,10 +17,3 @@ Overview understand whole map of data science
 运用实现：Hadoop, Spark, Storm
 
 * [cnblog](http://www.cnblogs.com/sunddenly/p/3977011.html)
-
-## Application
-
-### Log Processing
-
-* Blog:
-    * [zhihu](http://zhuanlan.zhihu.com/p/20390103?refer=sangwf)
