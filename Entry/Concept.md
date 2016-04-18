@@ -16,7 +16,11 @@ Overview understand whole map of data science
 
 运用实现：Hadoop, Spark, Storm
 
+<<<<<<< HEAD
 * HDFS
 * UDF(user defined function)
 
 * [cnblog](http://www.cnblogs.com/sunddenly/p/3977011.html)
+=======
+* [Hadoop-cnblog](http://www.cnblogs.com/sunddenly/p/3977011.html)
+>>>>>>> 494fe2479afb3429b6554f20ad40b2beabe7a2d9

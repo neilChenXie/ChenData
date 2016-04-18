@@ -10,5 +10,5 @@ Store in **HDFS** based on **Pig** to parse in format with **UDF**.
 
 ## Reference
 
-* Blog:
-    * [zhihu](http://zhuanlan.zhihu.com/p/20390103?refer=sangwf)
+* [Baidu](http://zhuanlan.zhihu.com/p/20390103?refer=sangwf)
+* [official](http://hadooptutorial.info/log-analysis-hadoop/)
