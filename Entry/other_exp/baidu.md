@@ -23,7 +23,7 @@ based on [Baidu](http://zhuanlan.zhihu.com/p/20390103?refer=sangwf)
     度，这些都是我们自己开发的。
     ```
 
-8. 第三方，SQL，Log Process优劣分析
+8. 第三方，SQL，Log Process优劣分析。业务数据库和数据仓库的差别
 
     ```
     首先，我们要弄清楚业务数据库和数据仓库这两个概念。对于数据规模较小的情况下，
@@ -46,3 +46,11 @@ based on [Baidu](http://zhuanlan.zhihu.com/p/20390103?refer=sangwf)
 11. Source to Data platform
 
 12. 多维数据模型
+
+13. 统计，分析，挖掘
+
+14. 可视化
+
+15. 调度器
+
+16. 元数据
