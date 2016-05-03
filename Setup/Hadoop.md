@@ -11,12 +11,22 @@ give `hadoop` all permission
 connect to internet, change **hostname**
 > `nmtui`
 
+check ip
+> 1. `yum install net-tools`
+2. `ifconfig`
+
 revise **hosts** file
 > `{ip} Master`
 
 ssh keys
-> 1. `ssh-keygen -t rsa`
+> Master:
+1. `ssh-keygen -t rsa`
 2. `cat ~/.ssh/id_rsa.pub >> authorized_keys`
+3. `chmod 600 authorized_keys`
+
+>Slave:
+1. `scp hadoop@Master:~/.ssh/id_rsa.pub hadoop@Slave{n}:~/master_rsa.pub`
+2. `cat ~/master_rsa.pub >> authorized_keys`
 3. `chmod 600 authorized_keys`
 
 java
@@ -81,3 +91,6 @@ files under $HADOOP_HOME/etc/hadoop/
 > check `ping` all hosts
 
 3. add **new slave** to `/etc/hadoop/slaves`
+
+4. Auto ssh
+> scp hadoop@Master:~/.ssh/id_rsa.pub hadoop@Slave{n}:~/master_rsa.pub,
