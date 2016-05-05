@@ -1,3 +1,0 @@
-# java
-
-download jdk
