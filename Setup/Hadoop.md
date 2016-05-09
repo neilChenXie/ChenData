@@ -1,43 +1,3 @@
-# Hadoop setup
-
-## VM ENV Setup
-
-setup **hadoop** user
-> 1. `useradd -m hadoop -s /bin/bash`
-2. `passwd hadoop`
-
-give `hadoop` all permission
-> `visudo`, and `hadoop{tab}ALL=(ALL){tab}ALL`
-
-connect to internet, change **hostname**
-> `nmtui`
-
-check ip
-> 1. `yum install net-tools`
-2. `ifconfig`
-
-revise **hostname**(centos7) file, **/etc/sysconfig/network**(centos6)
-> `{node_name}`
-
-ssh keys
-> Master:
-1. `ssh-keygen -t rsa`
-2. `cat ~/.ssh/id_rsa.pub >> authorized_keys`
-3. `chmod 600 authorized_keys`
-
->Slave:
-1. `ssh-keygen - rsa` **~/.ssh/** folder need to be create by **ssh-keygen**
-1. `scp hadoop@Master:~/.ssh/id_rsa.pub ~/master_rsa.pub`
-2. `cat ~/master_rsa.pub >> ~/.ssh/authorized_keys`
-3. `chmod 600 ~/.ssh/authorized_keys`
-
-java
->1. `scp {jdk-1.8.0.tar.gz} hadoop@{node_name}:~`
-2. `tar -zxf {jdk-1.8.0.tar.gz} -C /usr/local/`
-2. `export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk` in **~/.bashrc**
-3. `export PATH=$JAVA_HOME/bin:$PATH`
-
-
 ## Hadoop Setup
 
 hadoop
@@ -45,6 +5,7 @@ hadoop
 2. `scp ~/Download/hadoop-2.7.2.tar.gz hadoop@Master:/home/hadoop`
 3. `tar -zxf hadoop-2.7.2.tar.gz -C /usr/local`
 4. `chown -R hadoop:hadoop ./hadoop`
+
 ### Settings:
 
 files under $HADOOP_HOME/etc/hadoop/

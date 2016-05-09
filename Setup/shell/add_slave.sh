@@ -7,25 +7,24 @@ read slaveIp
 echo "Alias for new slave:"
 read slaveName
 
+ssh hadoop@$slaveIp  'ssh-keygen -t rsa'
+ssh root@$slaveIp 'chown hadoop:hadoop /etc/hosts'
 
-echo "
-1. ssh-keygen -t rsa
-2. su&cd
-3. ssh-keygen -t rsa"
-ssh hadoop@$slaveIp
 
-# slave auto ssh
-## add new slave to ""authorized_keys
-echo "set slave authorized_keys"
-cp ~/.ssh/id_rsa.pub ~/.ssh/new_authorized_keys
-sudo chmod 600 ~/.ssh/new_authorized_keys
-scp ~/.ssh/new_authorized_keys hadoop@$slaveIp:~/.ssh/authorized_keys
-scp ~/.ssh/new_authorized_keys root@$slaveIp:~/.ssh/authorized_keys
-rm ~/.ssh/new_authorized_keys
+#scp setup_ssh.sh hadoop@$slaveIp:~/
+#ssh hadoop@$slaveIp ARG1="$slaveIp" 'bash -s' < setup_ssh.sh
+# Master add new slave
+scp hadoop@$slaveIp:~/.ssh/id_rsa.pub ~/.ssh/new_authorized_keys
+cat ~/.ssh/new_authorized_keys >> ~/.ssh/authorized_keys
 
-# master info update
-## authorized_keys
-scp hadoop@$slaveIp:~/.ssh/id_rsa.pub ~/.ssh/new_slave_rsa.pub
-cat ~/.ssh/new_slave_rsa.pub > ~/.ssh/authorized_keys
-## hosts
-sudo echo "$slaveIp $slaveName" >> /etc/hosts
+# /etc/hosts already belong to Hadoop user
+echo "$slaveIp $slaveName" >> /etc/hosts
+
+# Send to all slaves
+ipList=$( cat /etc/hosts | awk '{print $1}' )
+
+for ip in $ipList ;
+do
+    scp /etc/hosts hadoop@$ip:/etc/hosts
+    scp ~/.ssh/authorized_keys hadoop@$ip:~/.ssh/authorized_keys
+done
