@@ -24,8 +24,8 @@ scp ~/.ssh/id_rsa.pub root@$slaveIp:~/.ssh/authorized_keys
 # need slave root passwd
 ssh root@$slaveIp  'bash -s' < ./modules/slave_auto_ssh.sh "$hadoop_user"
 
-$curp/modules/update_master.sh "$slaveIp" "$slaveName"
+bash ./modules/update_master.sh "$slaveIp" "$slaveName"
 
 # spread all updates
-./modules/spread_update.sh "$hadoop_user"
+bash ./modules/spread_update.sh "$hadoop_user"
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "spreading updates"
+
 if [ -z $1 ];
 then
 	echo "hadoop_user needed"
