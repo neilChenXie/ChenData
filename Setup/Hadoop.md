@@ -52,16 +52,11 @@ files under $HADOOP_HOME/etc/hadoop/
 
 under **Master**
 
-1. edit **Master's** `/etc/hosts`, send to **all previous Slaves**
-> check `ping` all hosts
 
-2. Auto ssh
-> `scp ~/.ssh/id_rsa.pub hadoop@Slave{n}:~/master_rsa.pub`,
+1. add **new ip** to /usr/local/hadoop/etc/hadoop/slaves
 
-3. add **new ip** to /usr/local/hadoop/etc/hadoop/slaves
-
-4. copy hadoop
-> `tar -zcf ~/hadoop.master.tar.gz ./hadoop` & `scp ~/hadoop.master.tar.gz hadoop@{new ip}:~`
+2. copy hadoop
+> `tar -zcf ~/hadoop.master.tar.gz /usr/local/hadoop` & `scp ~/hadoop.master.tar.gz hadoop@{new ip}:~`
 
 Under **new slave**:
 

@@ -28,6 +28,3 @@ java
 2. `tar -zxf {jdk-1.8.0.tar.gz} -C /usr/local/`
 2. `export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk` in **~/.bashrc**
 3. `export PATH=$JAVA_HOME/bin:$PATH`
-
-/etc/hosts
-`sudo chown hadoop:hadoop /etc/hosts`
