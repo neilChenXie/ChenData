@@ -13,3 +13,9 @@ done
 if [ ! -d "/home/`whoami`/.ssh" ]; then
     ssh-keygen -t rsa
 fi
+
+while read -r ip_list
+    updateHost $ip_list
+    updateSSH $ip_list
+do
+done < "/etc/hosts"
