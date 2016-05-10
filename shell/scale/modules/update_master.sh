@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ -z $1 ] || [ -z $2 ];
+then
+	echo "slaveIp and slaveName are needed"
+	exit 0
+else
+	slaveIp=$1
+	slaveName=$2
+fi
+
+# add to /.ssh/authorized_keys
+scp root@$slaveIp:~/.ssh/id_rsa.pub ~/.ssh/new_auth.pub
+cat ~/.ssh/new_auth.pub >> ~/.ssh/authorized_keys
+rm ~/.ssh/new_auth.pub
+
+# add to /etc/hosts
+echo "$slaveIp $slaveName" >> /etc/hosts
