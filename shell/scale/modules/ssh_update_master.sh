@@ -11,10 +11,10 @@ else
 	slaveName=$2
 fi
 
-# add to /.ssh/authorized_keys
+# master trust new slave
 scp root@$slaveIp:~/.ssh/id_rsa.pub ~/.ssh/new_auth.pub
 cat ~/.ssh/new_auth.pub >> ~/.ssh/authorized_keys
 rm ~/.ssh/new_auth.pub
 
-# add to /etc/hosts
+# update /etc/hosts
 echo "$slaveIp $slaveName" >> /etc/hosts

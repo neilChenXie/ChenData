@@ -7,21 +7,19 @@ then
 	echo "lake ./modules/* files"
 fi
 
-echo “IP for new slave:”
-read slaveIp
-echo "Alias for new slave:"
-read slaveName
+read -r -p "IP for new slave:" slaveIp
+read -r -p "Alias for new slave:" slaveName
 
-
-# need slave root passwd
+# slave root .ssh
 ssh root@$slaveIp 'ssh-keygen -t rsa'
 
-# need slave root passwd
+# slave add authorized_keys
 scp ~/.ssh/id_rsa.pub root@$slaveIp:~/.ssh/authorized_keys
 
-# need slave root passwd
+# slave root and hadoop_user trust master
 ssh root@$slaveIp  'bash -s' < ./modules/ssh_slave_auto.sh "$hadoop_user"
 
+#AUTOMATIC
 # setup .bashrc
 scp ~/.bashrc $hadoop_user@$slaveIp:~/.bashrc
 

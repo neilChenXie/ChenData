@@ -11,7 +11,7 @@ chown $1:$1 /etc/hosts
 # change authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 
-##copy to hadoop_user
+##hadoop_user .ssh
 echo "setup hadoop_user"
-cp -r ~/.ssh /home/$1/
+cp -r /root/.ssh /home/$1/
 chown -R $1:$1 /home/$1/.ssh

@@ -2,12 +2,14 @@
 
 echo "spreading updates"
 
+# $1 = $hadoop_user
 if [ -z $1 ];
 then
 	echo "hadoop_user needed"
 	exit 0
 fi
 
+# spread based on /etc/hosts
 while read -r line
 do
 	ipInfo=($line)
