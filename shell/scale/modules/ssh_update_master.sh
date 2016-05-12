@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if [ -z $1 ] || [ -z $2 ];
+echo "update master"
+
+if [[ -z $1  ||  -z $2 ]];
 then
 	echo "slaveIp and slaveName are needed"
 	exit 0
