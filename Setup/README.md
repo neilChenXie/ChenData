@@ -1,10 +1,6 @@
 # Setup
 
-## Master Setup
-
-
-
-## New Slave Setup
+## Must
 
 setup **hadoop** user
 > 1. `useradd -m hadoop -s /bin/bash`
@@ -12,6 +8,8 @@ setup **hadoop** user
 
 give `hadoop` all permission
 > `visudo`, and `hadoop{tab}ALL=(ALL){tab}ALL`
+
+## With Internet
 
 connect to internet, change **hostname**
 > `nmtui`
@@ -22,6 +20,8 @@ check ip
 
 revise **hostname**(centos7) file, **/etc/sysconfig/network**(centos6)
 > `{node_name}`
+
+# BASH
 
 java
 >1. `scp {jdk-1.8.0.tar.gz} hadoop@{node_name}:~`
