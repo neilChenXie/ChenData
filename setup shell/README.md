@@ -21,10 +21,11 @@ check ip
 revise **hostname**(centos7) file, **/etc/sysconfig/network**(centos6)
 > `{node_name}`
 
-# BASH
+# EMV List
 
-java
->1. `scp {jdk-1.8.0.tar.gz} hadoop@{node_name}:~`
-2. `tar -zxf {jdk-1.8.0.tar.gz} -C /usr/local/`
-2. `export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk` in **~/.bashrc**
-3. `export PATH=$JAVA_HOME/bin:$PATH`
+* java
+    * JAVA_HOME
+    * PATH
+* hadoop
+    * HADOOP_HOME
+    * PATH

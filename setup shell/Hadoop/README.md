@@ -10,6 +10,13 @@ hadoop
 
 files under $HADOOP_HOME/etc/hadoop/
 
+```xml
+<property>
+    <name></name>
+    <value></value>
+</property>
+```
+
 **slaves**:
 > domain name of DataNodes
 
