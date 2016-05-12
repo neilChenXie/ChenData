@@ -21,7 +21,7 @@ check ip
 revise **hostname**(centos7) file, **/etc/sysconfig/network**(centos6)
 > `{node_name}`
 
-# EMV List
+## EMV List
 
 * java
     * JAVA_HOME
@@ -29,3 +29,10 @@ revise **hostname**(centos7) file, **/etc/sysconfig/network**(centos6)
 * hadoop
     * HADOOP_HOME
     * PATH
+
+## Shell
+
+`ssh $user@$host "$command $arg0 $arg2"` break bash execution
+
+> `ssh -n $user@$host "$command $arg1 $arg2"`
+-n prevent read from stdin
