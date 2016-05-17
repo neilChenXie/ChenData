@@ -1,62 +1,28 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: {{ site.name }}
+---
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Chendata : ">
+<div id="home">
+  <h1>Blog Posts</h1>
+  <!--category-->
+  {% for category in site.categories %}
+  <h2>{{ category | first }}</h2>
+  <!-- </span>{{ category | last | size }}</span> -->
+  <ul class="arc-list">
+	  {% for post in category.last %}
+	  <li>{{ post.date | date:"%m/%d/%Y" }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	  {% endfor %}
+  </ul>
+  {% endfor %}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <!--posts-->
+  <!--
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  -->
 
-    <title>Chendata</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/neilChenXie/ChenData">View on GitHub</a>
-
-          <h1 id="project_title">Chendata</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/neilChenXie/ChenData/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/neilChenXie/ChenData/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a id="chendata" class="anchor" href="#chendata" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ChenData</h1>
-
-<p>Long time plan for learning data science</p>
-
-<h2>
-<a id="plan" class="anchor" href="#plan" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plan</h2>
-
-<h3>
-<a id="coursera" class="anchor" href="#coursera" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Coursera</h3>
-
-<ul>
-<li>11 week machine learning</li>
-</ul>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Chendata maintained by <a href="https://github.com/neilChenXie">neilChenXie</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+</div>
