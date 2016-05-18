@@ -18,7 +18,8 @@ tags: [hadoop, eclipse]
 一、eclipse装插件
 
 > 启动需`eclipse -clean`:
-  * 当eclipse owner不是root时，需要sudo运行，但这样跑WordCount的时候，程序会用**root用户名**去链接Hadoop集群，而Hadoop集群一般不开放root账号，导致连接不上
+
+> * 当eclipse owner不是root时，需要sudo运行，但这样跑WordCount的时候，程序会用**root用户名**去链接Hadoop集群，而Hadoop集群一般不开放root账号，导致连接不上
   * 解决，`sudo chown -R root:root eclipse`把owner给root，不用`sudo`也可运行，并且用**当前用户名**链接hadoop集群
   * 因为用**当前用户名**，所以应该用**hadoop**用户开发
 
