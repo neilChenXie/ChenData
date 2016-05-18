@@ -29,7 +29,7 @@ tags: [hadoop, eclipse]
 
 ```xml
 <property>
-  <name>dfs.permissions</name>
+  <name>dfs.permissions.enabled</name>
   <value>false</value>
 </property>
 ```
