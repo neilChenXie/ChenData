@@ -3,7 +3,7 @@ layout: post
 title: eclipse调试远程Hadoop集群
 date: 2016-05-17 18:44:15 +0800
 category: SekormData
-tags: [sekorm, data platform, hadoop, eclipse]
+tags: [hadoop, eclipse]
 ---
 
 网上有不少资料，但是不清楚eclipse是否和Hadoop在同一台机器上，而我需要的是Master和Eclipse不
@@ -29,8 +29,8 @@ tags: [sekorm, data platform, hadoop, eclipse]
 
 ```xml
 <property>
-  <name>dfs.permissions.enabled</name>
-  <value>false</value>
+    <name>dfs.permissions.enabled</name>
+    <value>false</value>
 </property>
 ```
 
