@@ -3,7 +3,7 @@ layout: post
 title: eclipse调试远程Hadoop集群
 date: 2016-05-17 18:44:15 +0800
 category: SekormData
-tags: [hadoop, eclipse]
+tags: [hadoop, eclipse, setup]
 ---
 
 网上有不少资料，但是不清楚eclipse是否和Hadoop在同一台机器上，而我需要的是Master和Eclipse不

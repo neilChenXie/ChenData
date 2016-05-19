@@ -71,3 +71,9 @@ Caused by: java.net.URISyntaxException: Relative path in absolute URI: ${system:
     <description>JDBC connect string for a JDBC metastore</description>
 </property>
 ```
+
+### 远程Hive Server
+
+Hive Server 与Hadoop跑在不同的机器上。Hive自身配置不用做任何改变，因为它识别HDFS位置基于
+Hadoop程序（虽然这个Hadoop并不在集群中），所以，只要Hive Server机器上有与集群相同配置的
+hadoop备份即可。
