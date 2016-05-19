@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hive安装
-date: 2016-05-19 11:44:15 +0800
+date: 2016-05-19 11:45:15 +0800
 category: SekormData
 tags: [sekorm, data platform, hadoop, setup]
 ---
