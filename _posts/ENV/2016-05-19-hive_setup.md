@@ -19,9 +19,7 @@ tags: [hive, setup]
 3. 检查`$HADOOP_HOME`,`$JAVA_HOME`等环境变量，教程中很详细
 4. 直接运行 hive，此为Hive命令行模式
 
-### 遇到Bug
-
-信息
+**Bug**
 
 > ```
 Exception in thread "main" java.lang.RuntimeException: java.lang.IllegalArgumentException: java.net.URISyntaxException: Relative path in absolute URI: ${system:java.io.tmpdir%7D/$%7Bsystem:user.name%7D
@@ -63,7 +61,7 @@ Caused by: java.net.URISyntaxException: Relative path in absolute URI: ${system:
 4. JLine 文件加到$HADOOP_HOME/share/hadoop/yarn/lib
 5. 创建hive临时文件夹
 
-订正
+**订正**
 
 > jdbc连接参数，连接用?不是;
 ```xml
