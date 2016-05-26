@@ -3,7 +3,7 @@ layout: post
 title: zookeeper官方例子
 date: 2016-05-26 10:45:15 +0800
 category: Zookeeper
-tags: [zookeeper, entry, setup]
+tags: [zookeeper, entry]
 ---
 
 ## 索引
