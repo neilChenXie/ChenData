@@ -2,7 +2,7 @@
 layout: post
 title: Hive安装
 date: 2016-05-19 11:45:15 +0800
-category: SekormData
+category: Hive
 tags: [hive, setup]
 ---
 

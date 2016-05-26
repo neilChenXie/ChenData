@@ -2,7 +2,7 @@
 layout: post
 title: Hadoop 配置
 date: 2016-05-17 11:44:15 +0800
-category: SekormData
+category: Hadoop
 tags: [hadoop, configuration]
 ---
 

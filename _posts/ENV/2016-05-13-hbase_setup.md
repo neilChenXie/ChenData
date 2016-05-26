@@ -2,7 +2,7 @@
 layout: post
 title: 安装HBase
 date: 2016-05-13 17:30:15 +0800
-category: SekormData
+category: HBase
 tags: [hbase, setup]
 ---
 

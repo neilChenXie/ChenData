@@ -2,7 +2,7 @@
 layout: post
 title: eclipse调试远程Hadoop集群
 date: 2016-05-17 18:44:15 +0800
-category: SekormData
+category: Hadoop
 tags: [hadoop, eclipse, setup]
 ---
 

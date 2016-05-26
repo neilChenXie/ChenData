@@ -2,7 +2,7 @@
 layout: post
 title: Hadoop 调试经验
 date: 2016-05-17 15:44:15 +0800
-category: SekormData
+category: Hadoop
 tags: [hadoop, debug]
 ---
 

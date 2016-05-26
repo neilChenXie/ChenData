@@ -2,7 +2,7 @@
 layout: post
 title: Hive Debug经验
 date: 2016-05-19 17:14:15 +0800
-category: SekormData
+category: Hive
 tags: [hive, debug]
 ---
 
