@@ -19,3 +19,9 @@ tags: [zookeeper, entry]
 下一步学习资料：
 * [学习经验](https://github.com/neilChenXie/zookeeper)
 * [配置文件同步例子](https://github.com/neilChenXie/syncconf)
+
+### 第四天理解
+
+zookeeper一次watch机制，通过getDate，getChildren，exists注册.
+
+已入门，后续经验直接记录在其他博文中
