@@ -17,6 +17,7 @@ tags: [zookeeper, entry]
 实际提供了一个变化广播机制，在单点修改znode值时，通知所有Watcher，像node.js的socket.io
 
 下一步学习资料：
+
 * [学习经验](https://github.com/neilChenXie/zookeeper)
 * [配置文件同步例子](https://github.com/neilChenXie/syncconf)
 
