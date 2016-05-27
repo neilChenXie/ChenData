@@ -23,6 +23,7 @@ tags: [zookeeper, entry]
 
 ### 第四天理解
 
+zookeeper构造函数接受多Host地址，自动切换
 zookeeper一次watch机制，通过getDate，getChildren，exists注册.
 
 已入门，后续经验直接记录在其他博文中
