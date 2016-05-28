@@ -1,6 +1,6 @@
 ---
 layout: post
-title: zookeeper配置同步例子
+title: zookeeper配置同步例子及理解
 date: 2016-05-27 09:45:15 +0800
 category: Zookeeper
 tags: [zookeeper, entry]

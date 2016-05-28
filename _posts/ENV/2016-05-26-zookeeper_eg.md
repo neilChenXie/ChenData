@@ -1,6 +1,6 @@
 ---
 layout: post
-title: zookeeper官方例子
+title: zookeeper官方例子及理解
 date: 2016-05-26 10:45:15 +0800
 category: Zookeeper
 tags: [zookeeper, entry]
