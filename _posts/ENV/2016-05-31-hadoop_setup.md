@@ -23,3 +23,7 @@ tags: [hadoop, setup]
 三、Hadoop配置
 
 四、.bashrc
+
+## 经验
+
+hosts里的名字不能有 `_`
