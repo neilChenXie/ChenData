@@ -8,35 +8,12 @@ tags: [java, zookeeper， monitor]
 
 ## common-io
 
-### Know First
+[详解](http://chen-node.com/ChenJava/packages/common-io)
 
-* 设计模式-观察者模式
-
-### Class 详解
-
-FileAlterationObserver(String directory, FileFilter filter, IOcase caseSensitivity)
-
-> FileAlterationObserver represents the state of files below a root directory, checking the filesystem and notifying listeners of create, change or delete events.
-
-> 检查一个文件夹下，通过file filter之后的文件
-
-Input:
-
-* directory: 文件夹目录
-
-* filter: 用于筛选文件, 默认null, 即整个文件夹
-
-> ``java
-IOFileFilter directories = FileFilterUtils.and(
-                              FileFilterUtils.directoryFileFilter(),
-                              HiddenFileFilter.VISIBLE);
-IOFileFilter files = FileFilterUtils.and(
-                              FileFilterUtils.fileFileFilter(),
-                              FileFilterUtils.suffixFileFilter(".java"));
-IOFileFilter filter = FileFilterUtils.or(directories, files);
-```
-* IOcase: 用于默认null,
-
-FileAlterationListener
+[code]()
 
 ## jdk watcher
+
+[详解]()
+
+[code]()
