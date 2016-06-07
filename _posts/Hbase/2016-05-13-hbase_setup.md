@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 安装HBase
+permalink: /:categories/hbase_setup
 date: 2016-05-13 17:30:15 +0800
 category: HBase
 tags: [hbase, setup]
