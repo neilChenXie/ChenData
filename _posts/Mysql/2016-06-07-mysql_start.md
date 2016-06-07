@@ -23,7 +23,13 @@ sudo grep 'temporary password' /var/log/mysqld.log
 
 然后设置密码
 
+```mysql
+# MySQL
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
+```
+
 ```bash
+# Bash
 mysql_secure_installation
 # 默认是至少8位，大小写，特殊字符，数字都要,e.g. !@QWqw12
 ```
