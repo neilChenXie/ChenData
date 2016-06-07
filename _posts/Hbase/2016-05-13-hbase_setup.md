@@ -11,6 +11,7 @@ tags: [hbase, setup]
 * [厦门大学-学习指南](http://dblab.xmu.edu.cn/blog/588-2/)
 * [Evernote备份](http://www.evernote.com/l/APoyJA4tbk5AH6emhRfiBhuZx18-AL1-yms/)
 
+* [official](https://hbase.apache.org/book.html#quickstart)
 * [英文教程](http://www.tutorialspoint.com/hbase/hbase_installation.htm)
 
 ## 理解及问题
