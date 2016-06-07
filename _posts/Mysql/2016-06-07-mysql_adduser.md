@@ -29,6 +29,7 @@ CREATE USER 'name'@'%' IDENTIFIED BY '123456';
 
 ```mysql
 grant 权限 on 数据库.* to 用户名@登录主机 identified by "密码";
+flush privileges;
 ```
 
 权限
