@@ -28,13 +28,16 @@ CREATE USER 'name'@'%' IDENTIFIED BY '123456';
 ### 授权
 
 ```mysql
-grant 权限 on 数据库.* to 用户名@登录主机 identified by "密码";
+grant <权限> on <数据库>.* to '<用户名>'@'<登录主机>' identified by "<密码>";
 flush privileges;
-# check
-show grants for '<username>'@'<hots>';
 ```
 
 权限
 
-> ALL, SELECT, delete, update, create, drop
+> ALL, SELECT, DELETE, UPDATE, CREATE, DROP
 
+### check
+
+```mysql
+show grants for '<username>'@'<hots>';
+```
