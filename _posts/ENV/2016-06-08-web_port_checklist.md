@@ -1,0 +1,24 @@
+---
+layout: post
+title: web端口小手册
+permalink: /:categories/web_port
+date: 2016-06-08 09:17:15 +0800
+category: Environment
+tags: [checklist]
+---
+
+### Hadoop
+
+50070
+
+> information
+
+8088
+
+> historyserver
+
+### Hbase
+
+16010
+
+> information
