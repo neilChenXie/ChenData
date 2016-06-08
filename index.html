@@ -10,7 +10,7 @@ title: {{ site.name }}
   <h2>{{ category | first }}</h2>
   <!-- </span>{{ category | last | size }}</span> -->
   <ul class="arc-list">
-	  {% for post in category.last %}
+	  {% for post in category.last reversed %}
 	  <li>{{ post.date | date:"%m/%d/%Y" }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 	  {% endfor %}
   </ul>
