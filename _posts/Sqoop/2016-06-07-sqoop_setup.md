@@ -9,7 +9,7 @@ tags: [input, sqoop]
 
 ## 索引
 
-[中文教程](https://www.evernote.com/shard/s250/nl/33206666/3499d7c4-ecd9-4674-96be-503aa705a029?title=%E5%9C%A8hadoop2.6.0%E9%9B%86%E7%BE%A4%E4%B8%8A%E5%AE%89%E8%A3%85sqoop1.4.6%2C%20flume1.6.0%E5%8F%8A%E6%B5%8B%E8%AF%95)
+[中文教程](https://www.evernote.com/shard/s250/sh/3499d7c4-ecd9-4674-96be-503aa705a029/79520b6d1e6bf182f809c3f4c470cee8)
 
 
 ## Steps
