@@ -3,7 +3,7 @@ layout: post
 title: script小手册
 permalink: /:categories/script_checklist
 date: 2016-06-08 09:17:15 +0800
-category: Environment
+category: 索引
 tags: [checklist]
 ---
 
@@ -33,4 +33,30 @@ stop
 
 ```bash
 stop-hbase.sh
+```
+
+### Zookeeper
+
+start/stop
+
+```bash
+zkServer.sh start/stop
+```
+
+check
+
+```bash
+zkServer.sh status
+```
+
+cli
+
+```bash
+zkCli.sh -server <host>:<port>
+```
+
+### Flume
+
+```bash
+flume-ng agent --conf ./conf/ --conf-file=./conf/flumetest --name a1 -Dflume.root.logger=INFO,console1
 ```
