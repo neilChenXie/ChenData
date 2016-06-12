@@ -7,6 +7,10 @@ category: Input
 tags: [input, flume]
 ---
 
+### 索引
+
+[balance, failover 实验](https://www.evernote.com/shard/s250/sh/649bff3f-ec9c-4e32-97ad-331e3eccd901/6fad1915e1ccd654424c9b2b2c8c277a)
+
 ### 多节，由avro连接
 
 agent
