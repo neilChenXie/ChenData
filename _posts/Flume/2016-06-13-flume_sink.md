@@ -10,3 +10,11 @@ tags: [input, flume]
 ### avro sink
 
 [avro sink](https://flume.apache.org/FlumeUserGuide.html#avro-sink)
+
+### file_roll sink
+
+[file_roll sink](https://flume.apache.org/FlumeUserGuide.html#file-roll-sink)
+
+### HDFS sink
+
+[HDFS sink](https://flume.apache.org/FlumeUserGuide.html#hdfs-sink)

@@ -20,3 +20,7 @@ tags: [input, flume]
 #### avro source
 
 [avro source](https://flume.apache.org/FlumeUserGuide.html#avro-source)
+
+special attr
+
+> ipFilter, ipFilterRules
