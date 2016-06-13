@@ -66,9 +66,11 @@ flume-ng agent --conf ./conf/ --conf-file=./conf/flumetest --name a1 -Dflume.roo
 start
 
 ```bash
+# under $FLUME_HOME
+
 #bin/flume-ng agent \
-#--conf $FLUME_HOME/conf \
-#--conf-file $FLUME_HOME/conf/{properties file} \
+#--conf ./conf \
+#--conf-file ./conf/{properties file} \
 #--name a1 \
 #-Dflume.root.logger=INFO,console
 
