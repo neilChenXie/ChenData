@@ -17,3 +17,10 @@ Memory channel
 File channel
 
 [official](https://flume.apache.org/FlumeUserGuide.html#file-channel)
+
+处理问题
+
+> * 备份文件位置，第二备份文件位置
+* 最大文件大小，最小磁盘空间
+* 恢复配置
+* 加密

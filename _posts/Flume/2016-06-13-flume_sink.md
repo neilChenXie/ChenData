@@ -18,3 +18,8 @@ tags: [input, flume]
 ### HDFS sink
 
 [HDFS sink](https://flume.apache.org/FlumeUserGuide.html#hdfs-sink)
+
+理解
+
+> * 文件前后缀，临时文件前后缀
+* file_roll阈值
