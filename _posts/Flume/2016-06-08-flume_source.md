@@ -9,6 +9,10 @@ tags: [input, flume]
 
 ### Source 特点
 
-spool directory source
+#### Exec source
+
+[![exec source]({{ site.baseurl }}/image/Flume/Flume_Exec_Source.png)]({{ site.baseurl }}/image/Flume/Flume_Exec_Source.png)
+
+#### spool directory source
 
 > 监控文件夹，传输不文件不可修改，否则异常
