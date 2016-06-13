@@ -60,3 +60,17 @@ zkCli.sh -server <host>:<port>
 ```bash
 flume-ng agent --conf ./conf/ --conf-file=./conf/flumetest --name a1 -Dflume.root.logger=INFO,console1
 ```
+
+### Flume
+
+start
+
+```bash
+#bin/flume-ng agent \
+#--conf $FLUME_HOME/conf \
+#--conf-file $FLUME_HOME/conf/{properties file} \
+#--name a1 \
+#-Dflume.root.logger=INFO,console
+
+flume-ng agent --conf $FLUME_HOME/conf --conf-file e$FLUME_HOME/conf/{agent.properties} --name {agentName} -Dflume.root.logger=INFO,console
+```
