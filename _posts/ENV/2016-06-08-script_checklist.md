@@ -72,5 +72,5 @@ start
 #--name a1 \
 #-Dflume.root.logger=INFO,console
 
-flume-ng agent --conf $FLUME_HOME/conf --conf-file e$FLUME_HOME/conf/{agent.properties} --name {agentName} -Dflume.root.logger=INFO,console
+bin/flume-ng agent --conf ./conf --conf-file ./conf/{agent.properties} --name {agentName} -Dflume.root.logger=INFO,console
 ```
