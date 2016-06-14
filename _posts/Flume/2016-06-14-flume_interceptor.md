@@ -2,7 +2,7 @@
 layout: post
 title: flume interceptors
 permalink: /:categories/flume_interceptors
-date: 2016-06-14 09:20:15 +0800
+date: 2016-06-14 13:20:15 +0800
 category: Input
 tags: [input, flume]
 ---
@@ -27,3 +27,7 @@ If you have multiple collectors writing to the same HDFS path, then you could al
 ### 理解
 
 #### regex extractor
+
+[正则教程](http://www.runoob.com/regexp/regexp-syntax.html)
+
+对于java来说，读取正则字符串，`\d`表示转义`\\d`=>`\d`,所以都会多一个`\`
