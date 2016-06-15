@@ -32,6 +32,7 @@ cat access_20160613.log | grep 'GET\ \/news\/' | grep -v 'detail\|get\|html\|sha
 /news/share
 
 > `/news/share;jsessionid=9BD9D9FF5B3B02D8355CB4F4C7099DAF?newId=1379`
+是否会有*.html请求
 
 ### Download
 
