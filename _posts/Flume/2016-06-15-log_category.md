@@ -52,3 +52,27 @@ cat access_20160613.log | grep 'GET\ \/doc\/downloadDoc\|GET\ \/wmsApi\/docOuter
 #### problem
 
 移动段需要解密
+
+### Favorite
+
+#### info
+
+| info | web | api |
+| ---- | --- | --- |
+| url | /memFavorite/webCollect | /memberApi/memFavorite/add |
+
+#### problem
+
+POST request
+
+### share
+
+#### info
+
+| info | web | api |
+| ---- | --- | --- |
+| url | /share/shareLog | /statApi/share/shareLog |
+
+#### problem
+
+POST request
