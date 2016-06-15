@@ -31,3 +31,15 @@ If you have multiple collectors writing to the same HDFS path, then you could al
 [正则教程](http://www.runoob.com/regexp/regexp-syntax.html)
 
 对于java来说，读取正则字符串，`\d`表示转义`\\d`=>`\d`,所以都会多一个`\`
+
+### 经验
+
+```bash
+2016-06-15 11:45:37,285 (pool-3-thread-1) [WARN - org.apache.flume.serialization.LineDeserializer.readLine(LineDeserializer.java:144)] Line length exceeds max (2048), truncating line!
+```
+
+日志长度超过默认的2048字节,更改source的deserializer.maxLineLength
+
+```
+a1.sources.r1.deserializer.maxLineLength = 4096
+```
