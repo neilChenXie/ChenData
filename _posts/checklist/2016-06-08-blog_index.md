@@ -15,18 +15,18 @@ tags: [checklist]
 
 官网
 
-[flume user guide](https://flume.apache.org/FlumeUserGuide.html)
-[flume develop guide](https://flume.apache.org/FlumeDeveloperGuide.html)
-[flume api](https://flume.apache.org/releases/content/1.6.0/apidocs/)
+* [flume user guide](https://flume.apache.org/FlumeUserGuide.html)
+* [flume develop guide](https://flume.apache.org/FlumeDeveloperGuide.html)
+* [flume api](https://flume.apache.org/releases/content/1.6.0/apidocs/)
 
 例子
 
-[flume-jambalaya](https://github.com/aicer/flume-jambalaya)
-[flumeQuleInterceptor](https://github.com/qule/flumeQuleInterceptor)
+* [flume-jambalaya](https://github.com/aicer/flume-jambalaya)
+* [flumeQuleInterceptor](https://github.com/qule/flumeQuleInterceptor)
 
 > github 搜: 'flume Interceptor'
 
-[build a full flume interceptor by a non java developer](https://thisdataguy.com/2014/02/07/how-to-build-a-full-flume-interceptor-by-a-non-java-developer/)
+* [build a full flume interceptor by a non java developer](https://thisdataguy.com/2014/02/07/how-to-build-a-full-flume-interceptor-by-a-non-java-developer/)
 
 
 ### 系统
