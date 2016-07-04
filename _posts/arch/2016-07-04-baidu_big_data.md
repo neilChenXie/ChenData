@@ -2,7 +2,7 @@
 layout: post
 title: 百度数据部门发展-瓦利哥博客
 permalink: /:categories/baidu_big_data
-date: 2016-07-04 12:17:15 +0800
+date: 2016-07-04 09:17:15 +0800
 category: 索引
 tags: [checklist]
 ---
