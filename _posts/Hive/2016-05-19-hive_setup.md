@@ -55,11 +55,12 @@ Caused by: java.net.URISyntaxException: Relative path in absolute URI: ${system:
 
 ### metadata 由MySQL存储
 
-> 1. 创建hive账户，hive数据库，分配权限
-2. 下载 mysql-connector-java
-3. 配置hive-site.xml连接MySQL
-4. JLine 文件加到$HADOOP_HOME/share/hadoop/yarn/lib
-5. 创建hive临时文件夹
+> 1. 创建hive账户，hive数据库，分配权限, 2.\* 需要**初始化**数据库
+> 1.2 `mysql> SOURCE $HIVE_HOME//scripts/metastore/upgrade/mysql/hive-schema-*.*.mysql.sql`
+> 2. 下载 mysql-connector-java
+> 3. 配置hive-site.xml连接MySQL
+> 4. JLine 文件加到$HADOOP_HOME/share/hadoop/yarn/lib
+> 5. 创建hive临时文件夹
 
 **订正**
 

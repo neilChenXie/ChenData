@@ -58,7 +58,7 @@ zkCli.sh -server <host>:<port>
 ### Flume
 
 ```bash
-flume-ng agent --conf ./conf/ --conf-file=./conf/flumetest --name a1 -Dflume.root.logger=INFO,console1
+flume-ng agent --conf ./conf/ --conf-file=./conf/flumetest --name a1 -Dflume.root.logger=INFO,console
 ```
 
 ### Flume
