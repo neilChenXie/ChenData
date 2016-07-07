@@ -76,3 +76,16 @@ start
 
 bin/flume-ng agent --conf ./conf --conf-file ./conf/{agent.properties} --name {agentName} -Dflume.root.logger=INFO,console
 ```
+
+### Hive
+
+```bash
+# local
+hive
+# Server
+hiveserver2
+# Hive local Client
+beeline -u jdbc:hive2://
+# Hive Remote Client
+beeline -u jdbc:hive2://$HS2_HOST:$HS2_PORT
+```

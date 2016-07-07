@@ -63,7 +63,8 @@ Caused by: java.net.URISyntaxException: Relative path in absolute URI: ${system:
 
 **订正**
 
-> jdbc连接参数，连接用?不是;
+> jdbc连接参数，连接用'?'不是';'
+
 ```xml
 <property>
     <name>javax.jdo.option.ConnectionURL</name>
