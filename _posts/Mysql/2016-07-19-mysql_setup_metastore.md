@@ -33,3 +33,13 @@ grant all on hive.* to hive@'localhost' identified by 'hive';
 # 刷新
 flush privileges;
 ```
+   
+### 经验
+
+#### 初始化
+
+> 很多情况下，数据库都需要通过官方提供的\*.sql文件进行初始化
+
+```sql
+source /path/to/sqlfile.sql;
+```
