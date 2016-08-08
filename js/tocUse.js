@@ -4,5 +4,10 @@ var config = {
 };
 
 $(document).ready(function() {
-	$('#toc').toc(config);
+	var emWidth = $(window).width() / parseFloat($("body").css("font-size"));
+	if (emWidth >= 64 ) {
+		$('#big_toc').toc(config);
+	} else {
+		$('#tiny_toc').toc(config);
+	}
 });
