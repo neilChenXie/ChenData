@@ -1,4 +1,15 @@
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64rem) {
+
+	.page-header {
+		width:50%;
+		padding:2rem 10% 2rem 10%;
+	}
+
+	#page-header-div {
+		position: fixed;
+		width: 30%;
+	}
+
 	.tag-list {
 		font-size: 14px;
 		color: #606c71;
@@ -12,6 +23,7 @@
 
 	/*override the original setting*/
 	.main-content {
+		width: 100%;
 		max-width: 64rem;
 		padding: 2rem 6rem 2rem 0;
 		margin-left: 6rem;
@@ -20,6 +32,8 @@
 
 	/*complement the original setting*/
 	body {
+		width: 100%;
+		height: 100%;
 		display: -webkit-box;
 	}
 
@@ -29,7 +43,7 @@
 	}
 }
 
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 64rem) {
 	#big_toc {
 		display: none;
 	}
