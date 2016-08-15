@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body>
+
+	<section class="left-slide">
+		<div id="big_toc"></div>
+	</section>
+    <section class="main-content">
+
+        <h2>{{ page.title }}
+        </h2>
+        <p class="meta">
+            <span>{{ page.date | date_to_string }}<span>
+        </p>
+
+		<div id="tiny_toc"></div>
+
+        {{ content }}
+
+        <!--Links-->
+        <span class="tag-list">
+            #
+            {% for tag in page.tags %}
+            {{ tag }}
+            {% endfor %}
+        </span>
+        {% include page-footer.html %}
+
+    </section>
+
+</body>
+</html>
